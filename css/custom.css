@@ -1,5 +1,16 @@
-h1{
+h1 {
 	color: #000000;
 	text-size: 80px;
 	text-align: center;
+}
+
+.button {
+	text-align: center;
+}
+
+.answer {
+	color: white;
+}
+.answer:hover {
+	color: black;
 }

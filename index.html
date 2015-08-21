@@ -5,17 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="index.js"></script>
-	<script type="text/javascript">function buttonClick(rnd) {
-		console.log(rnd); //remove befor flight
-		return document.getElementById("numeral").innerHTML = numberToText(rnd);
+	<script type="text/javascript">function buttonClick() {
+		var rnd = Math.floor(Math.random() * 999)
+
+		document.getElementById("answer").innerHTML = rnd;
+		document.getElementById("numeral").innerHTML = numberToText(rnd);
 	}</script>
 </head>
 <body>
 	<div id="main">
 		<h1 id="numeral">Click button for random numeral</h1>
 	</div>
-	<div calss="button" style="text-align:center">
-		<button class="btn btn-primary" type="button" onclick="buttonClick(Math.floor((Math.random() * 999)))" align="center">Click Me!</button>
+	<div class="button">
+		<button class="btn btn-primary" type="button" onclick="buttonClick()" align="center">Click Me!</button>
 	<div>
+	
+	<div class="ans">
+		<p>And the answer is: <span id="answer" class="answer">Click button first!</span></p> 
+	</div>
 </body>
 </html>
