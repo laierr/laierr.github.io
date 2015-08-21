@@ -1,0 +1,15 @@
+{
+  "name": "hebrew-numerals",
+  "version": "0.0.0",
+  "description": "Hebrew numerals traning",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/test_index.js"
+  },
+  "author": "Lev Khomak",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.2.5"
+  }
+}
