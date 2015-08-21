@@ -2,15 +2,15 @@
 
 var digits = {
 	0: "efes",
-	1: "ahat",
+	1: "ehad",
 	2: "shtaim",
-	3: "shalosh",
+	3: "shelosh",
 	4: "arba",
 	5: "hamesh",
 	6: "shesh",
 	7: "sheva",
 	8: "shmone",
-	9: "tesha"
+	9: "teisha"
 };
 
 var tens = {
@@ -33,7 +33,7 @@ var hundreds = {
 	5: "hamesh meot",
 	6: "shesh meot",
 	7: "shva meot",
-	8: "shmone meot",
+	8: "shmona meot",
 	9: "tsha meot"
 };
 
@@ -55,12 +55,12 @@ var tensToText = function (ten, digit) {
 	if (digit === 0) { //tens precise
 		return tens[ten];
 	} else if (ten === 1) { //ten case
-		return digits[digit] + " esre";
+		return digits[digit] + "esre";
 	} else if (ten === 0) { 
-		return "ve " + digits[digit];
+		return "ve" + digits[digit];
 	};
 	
-	return tens[ten] + " ve " + digits[digit];
+	return tens[ten] + " ve" + digits[digit];
 };
 
 
@@ -68,7 +68,7 @@ var hundredsToText = function (hundred, ten, digit) {
 	if (ten === 0 && digit === 0 ) { // hundreds precise
  		return hundreds[hundred];
 	}; 
-	return hundreds[hundred] + (ten === 1 || digit === 0 ? " ve " : " ") + tensToText(ten, digit);
+	return hundreds[hundred] + (ten === 1 || digit === 0 ? " ve" : " ") + tensToText(ten, digit);
 };
 
 if (typeof exports === "undefined") {
