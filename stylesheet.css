@@ -1,0 +1,48 @@
+.main h1 {
+	color: black;
+	text-size: 80px;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+.main h1:first-letter {
+    text-transform:capitalize;
+}
+
+.button {
+	text-align: center;
+}
+
+.ans {
+	margin-top: 8px;
+	margin-left: 41.5%;
+}
+
+.answer {
+	color: white;
+	padding-right: 10px;
+
+}
+.answer:hover {
+	color: black;
+}
+
+.btn {
+ outline: none;
+ background-color: transparent;
+ -moz-border-radius:3px;
+ -webkit-border-radius:3px;
+ border-radius:3px;
+ border:2px solid #dcdcdc;
+ display:inline-block;
+ cursor:pointer;
+ color:black;
+ font-size:14px;
+ font-weight:bold;
+ padding:14px 12px;
+ text-decoration:none;
+}
+.btn:hover {
+ background-color:#eaeaeb;
+}
