@@ -3,6 +3,7 @@
 	text-size: 80px;
 	text-align: center;
 	line-height: 1.1;
+	font-weight: normal;
 }
 
 .main h1:first-letter {
