@@ -2,27 +2,29 @@
 <html>
 <head>
 	<title>Hebrew Numbers</title>
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script type="text/javascript" src="index.js"></script>
-	<script type="text/javascript">function buttonClick() {
-		var rnd = Math.floor(Math.random() * 999)
+	<script type="text/javascript">
+		function buttonClick() {
+			var rnd = Math.floor(Math.random() * 999)
 
-		document.getElementById("answer").innerHTML = rnd;
-		document.getElementById("numeral").innerHTML = numberToText(rnd);
-	}</script>
+			document.getElementById("answer").innerHTML = rnd;
+			document.getElementById("numeral").innerHTML = numberToText(rnd);
+		}
+	</script>
 </head>
 <body>
-	<div id="main">
+	<div class="main">
 		<h1 id="numeral">Click button for random numeral</h1>
 	</div>
+	
 	<div class="button">
-		<button class="btn btn-primary" type="button" onclick="buttonClick()" align="center">Click Me!</button>
+		<button class="btn" type="button" onclick="buttonClick()">Click me</button>
 	</div>
 	
 	<div class="ans">
 		<p>And the answer is: 
-			<span id="answer" class="answer"></span>
+			<span id="answer" class="answer">Click the button</span>
 		</p> 
 	</div>
 </body>

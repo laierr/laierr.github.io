@@ -38,7 +38,7 @@ var hundreds = {
 };
 
 var numberToText = function (num) {
-	var array = num.toString().split('').map(function (i) { return  parseInt(i); });
+	var array = num.toString().split('').map(function (i) { return  parseInt(i); }); //number to array
 
 	if (array.length === 1) {
 		return digits[array[0]]
